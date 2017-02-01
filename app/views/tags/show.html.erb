@@ -1,0 +1,9 @@
+<div class="card-row">
+  <% @destinations.each do |d| %>
+    <div class="cards">
+      <%= image_tag("#{d.image}") %><br>
+      <%= d.name %><br>
+      <%= link_to "See More", destination_path(d) %><br>
+    </div>
+  <% end %>
+</div>

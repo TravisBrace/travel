@@ -1,0 +1,11 @@
+<div class="nav-bar">
+    <% if @tag != nil %>
+      <span style="float: left;"><%= @tag.title %></span>
+      <span style="float: right;">
+        <%= link_to 'New Destination', new_destination_path(tag: @tag.id) %>
+      </span>
+    <% else %>
+    <span style="float: left;">has_many and belongs_to association app</span>
+    <% end %>
+      <span style="float: right;"><%= link_to 'New Tag Category', '/tags/new' %></span>
+</div>

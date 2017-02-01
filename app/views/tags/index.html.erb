@@ -1,0 +1,9 @@
+<div class="card-row">
+  <% @tags.each do |t| %>
+    <div class="cards">
+      <%= image_tag("#{t.image}") %><br>
+      <%= t.title %><br>
+      <%= link_to "Learn More", tag_path(t) %>
+    </div>
+  <% end %>
+</div>
